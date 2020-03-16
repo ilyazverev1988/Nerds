@@ -1,19 +1,27 @@
-.site-list__item {
-  color: #111111;
+.site-list {
+  width: 800px;
+  margin-left: 202px;
+}
+
+.site-list__reference {
+  position: relative;
+  font-size: 16px;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  line-height: 30px;
   text-transform: uppercase;
-}
 
-@media (min-width: $tablet-width) {
-  .site-list__item {
-    margin-right: 25px;
+  &--basket::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    top: 2px;
+    left: -28px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .site-list__item {
-    margin-right: 35px;
-  }
+.site-list___logo {
+  pointer-events: none;
 }

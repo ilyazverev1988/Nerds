@@ -1,0 +1,18 @@
+.site__item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 18px;
+  margin-left: 35px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+    top: 9px;
+    left: -34px;
+  }
+}

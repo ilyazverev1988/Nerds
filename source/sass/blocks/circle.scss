@@ -1,0 +1,19 @@
+.circle__item {
+  position: relative;
+  margin-right: 30px;
+
+  &--round::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    top: 14px;
+    left: 18px;
+    border-radius: 50%;
+  }
+}
+
+.circle {
+  display: flex;
+}

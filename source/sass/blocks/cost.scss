@@ -1,0 +1,31 @@
+.cost__container {
+  display: flex;
+  margin-right: 33px;
+  margin-top: 26px;
+}
+
+.cost__text {
+  margin: 0 11px 0 0;
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.cost__high {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.cost__low,
+.cost__high {
+  width: 80px;
+  height: 38px;
+  background-color: #eeeeee;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 9px;
+  margin-top: -9px;
+}

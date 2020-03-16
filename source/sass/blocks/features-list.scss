@@ -1,0 +1,37 @@
+.features-list {
+  margin-bottom: 18px;
+}
+
+.features-list__label {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 36px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/checkbox-off.png");
+    width: 23px;
+    height: 23px;
+    top: -2px;
+    left: -36px;
+  }
+}
+
+.features-list__input:checked + .features-list__label::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/checkbox-on.png");
+  width: 27px;
+  height: 23px;
+  top: -2px;
+  left: -36px;
+}
+
+.features-list__input:checked + .features-list__label::before {
+  display: none;
+}

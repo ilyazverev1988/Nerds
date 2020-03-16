@@ -1,0 +1,26 @@
+.sort {
+  display: flex;
+  width: 1160px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sort__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.05px;
+  margin: 0;
+}
+
+.sort__detail {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 0 0 0 280px;
+}
+
+.sort__list {
+  margin-left: 267px;
+}

@@ -1,0 +1,33 @@
+.template {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.template__container:nth-child(2n - 1) {
+  margin-right: 40px;
+}
+
+.template__container:nth-child(n) {
+  margin-bottom: 16.5px;
+  margin-top: 16.5px;
+}
+
+.template__header {
+  width: 360px;
+  height: 40px;
+  background-color: #d7dcde;
+}
+
+.template__wrapper {
+  position: relative;
+}
+
+.template__hover {
+  width: 360px;
+  height: 231px;
+  background-color: #d7dcde;
+  position: absolute;
+  top: 344px;
+  left: 1px;
+  display: none;
+}

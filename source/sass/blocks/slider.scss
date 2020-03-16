@@ -1,7 +1,13 @@
-.slider__time {
-  color: #111111;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+.slider {
+  width: $width;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider__button {
+  position: absolute;
+  z-index: 2;
+  left: 676px;
+  top: 336px;
+  width: 88px;
 }

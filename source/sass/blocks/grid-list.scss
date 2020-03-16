@@ -1,0 +1,38 @@
+.grid-list__item {
+  margin-bottom: 20px;
+  margin-left: 37px;
+}
+
+.grid-list__label {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/radio-off.png");
+    width: 25px;
+    height: 25px;
+    top: -3px;
+    left: -39px;
+  }
+}
+
+.grid-list__input:checked + .grid-list__label::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/radio-on.png");
+  width: 25px;
+  height: 25px;
+  top: -3px;
+  left: -39px;
+  z-index: 1;
+}
+
+.grid-list__input:checked + .grid-list__label::before {
+  display: none;
+}

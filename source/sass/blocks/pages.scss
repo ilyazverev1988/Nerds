@@ -1,0 +1,37 @@
+.pages {
+  display: flex;
+  margin-top: 40px;
+}
+
+.pages__item {
+  margin-right: 11px;
+}
+
+.pages__link {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 16px;
+  background-color: #d7dcde;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--active {
+    border: 3px solid #dbdbdb;
+    background-color: white;
+    padding-top: 13px;
+    pointer-events: none;
+  }
+
+  &--next {
+    padding-top: 16px;
+    margin-right: 11px;
+    background-color: #d7dcde;
+    width: 260px;
+    height: 50px;
+  }
+}

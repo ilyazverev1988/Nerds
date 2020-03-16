@@ -2,100 +2,299 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Магазин Nerds</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style1.css" rel="stylesheet" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body class="body">
-  <header class="body__header header">
-    <a href="index.html"><img class="header__logo" src="" width="" height="" alt="Нердс-логотип компании"></a>
-    <ul class="header__list site-list">
-      <li class="site-list__item"><a href="">Студия</a></li>
-      <li class="site-list__item"><a href="">Клиенты</a></li>
-      <li class="site-list__item site-list__item--active"><a href="">Магазин</a></li>
-      <li class="site-list__item"><a href="">Контакты</a></li>
-      <li class="site-list__item site-list__item--basket"><a href="">Корзина</a></li>
-    </ul>
-  </header>
+  <div class="body__background">
+    <header class="body__header header">
+      <div class="header__wrap">
+        <a href="index.html"><img class="site-list___logo" src="/img/nerds-logo.png" width="160" height="height: 65"
+            alt="Нердс-логотип компании" /></a>
+        <ul class="header__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__reference" href="">Студия</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__reference" href="">Клиенты</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__reference site-list__reference--active" href="catalog.html">Магазин</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__reference" href="">Контакты</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__reference site-list__reference--basket" href="">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <h1 class="header__title">Магазин готовых шаблонов</h1>
+    </header>
+  </div>
 
   <main class="body__main main">
-    <h1 class="main__title">Магазин готовых шаблонов</h1>
-    <form class="main__form filter" action="">
-      <div class="filter__cost cost">
-        <h2 class="cost__title">СТОИМОСТЬ:</h2>
-        <img class="cost__img" src="" width="" height="" alt="">
-        <div class="cost__wrap">
-          <div class="cost__container">
-            <p>ОТ</p>
-            <output class="cost__low">0</output>
+    <section class="main__sort sort">
+      <p class="sort__title">СТОИМОСТЬ:</p>
+      <p class="sort__detail">СОРТИРОВАТЬ:</p>
+      <ul class="sort__list sort-list">
+        <li class="sort-list__item">
+          <a class="sort-list__link sort-list__link--active" href="">По цене</a>
+        </li>
+        <li class="sort-list__item">
+          <a class="sort-list__link" href="">По типу</a>
+        </li>
+        <li class="sort-list__item">
+          <a class="sort-list__link" href="">По названию</a>
+        </li>
+        <li class="sort-list__item">
+          <a class="sort-list__link sort-list__link--decrease sort-list__link--active-triangle" href=""></a>
+        </li>
+        <li class="sort-list__item">
+          <a class="sort-list__link sort-list__link--increase" href=""></a>
+        </li>
+      </ul>
+    </section>
+    <div class="main__wrap">
+      <form class="main__form filter" action="">
+        <div class="filter__form">
+          <div class="filter__line">
+            <img class="filter__pin filter__pin--low" src="/img/filter-button.png" alt="ползунки" width="20" height="23"
+              tabindex="0">
+            <div class="filter__line-sort"></div>
+            <img class="filter__pin filter__pin--high" src="/img/filter-button.png" alt="ползунки" width="20"
+              height="23" tabindex="0">
           </div>
-          <div class="cost__container">
-            <p>ДО</p>
-            <output class="cost__high">15000</output>
+          <div class="filter__cost cost">
+            <div class="cost__container">
+              <p class="cost__text">ОТ</p>
+              <output class="cost__low">0</output>
+            </div>
+            <div class="cost__container">
+              <p class="cost__text">ДО</p>
+              <output class="cost__high">15000</output>
+            </div>
           </div>
         </div>
+        <div class="filter__grid grid">
+          <h2 class="grid__title">Сетка:</h2>
+          <ul class="grid__list grid-list">
+            <li class="grid-list__item">
+              <input class="grid-list__input visually-hidden" type="radio" id="adaptive" name="grid" value="adaptive"
+                checked />
+              <label class="grid-list__label" for="adaptive">Адаптивная</label>
+            </li>
+            <li class="grid-list__item">
+              <input class="grid-list__input visually-hidden" type="radio" id="fix" name="grid" value="fix" />
+              <label class="grid-list__label" for="fix">Фиксированная</label>
+            </li>
+            <li class="grid-list__item">
+              <input class="grid-list__input visually-hidden" type="radio" id="flex" name="grid" value="flex" />
+              <label class="grid-list__label" for="flex">Резиновая</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter__features features">
+          <h2 class="features__title">ОСОБЕННОСТИ:</h2>
+          <ul class="features__list features-list">
+            <li class="features-list">
+              <input class="features-list__input visually-hidden" type="checkbox" id="slaider" name="slaider"
+                value="slaider" checked />
+              <label class="features-list__label" for="slaider">Слайдер</label>
+            </li>
+            <li class="features-list">
+              <input class="features-list__input visually-hidden" type="checkbox" id="advantages" name="advantages"
+                value="advantages" />
+              <label class="features-list__label" for="advantages">Блок преимуществ</label>
+            </li>
+            <li class="features-list">
+              <input class="features-list__input visually-hidden" type="checkbox" id="news" name="news" value="news"
+                checked />
+              <label class="features-list__label" for="news">Новости</label>
+            </li>
+            <li class="features-list">
+              <input class="features-list__input visually-hidden" type="checkbox" id="gallery" name="gallery"
+                value="gallery" />
+              <label class="features-list__label" for="gallery">Галерея</label>
+            </li>
+            <li class="features-list">
+              <input class="features-list__input visually-hidden" type="checkbox" id="button" name="button"
+                value="button" />
+              <label class="features-list__label" for="button">Корзина</label>
+            </li>
+          </ul>
+        </div>
+        <button class="filter__show" type="submit">ПОКАЗАТЬ</button>
+      </form>
+      <div class="main__container">
+        <section class="main__template template">
+          <div class="template__container">
+            <div class="template__header">
+              <ul class="template__circle circle">
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+              </ul>
+            </div>
+            <div class="template__wrapper">
+              <img class="template_example" src="/img/img-sedona.jpg" width="360" height="576" alt="сайт Седона" />
+              <div class="template__hover hover">
+                <h2 class="hover__title">Sedona</h2>
+                <p class="hover__detail">Информационный сайт<br> для туристов</p>
+                <a class="hover__cost" href="">9 900 руб.</a>
+              </div>
+            </div>
+          </div>
+          <div class="template__container">
+            <div class="template__header">
+              <ul class="template__circle circle">
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+              </ul>
+            </div>
+            <div class="template__wrapper">
+              <img class="template_example" src="/img/img-pink.jpg" width="360" height="576" alt="сайт Pink" />
+              <div class="template__hover hover">
+                <h2 class="hover__title">Pink App</h2>
+                <p class="hover__detail">
+                  Продуктовый лендинг<br> приложения для iOS и Android
+                </p>
+                <a class="hover__cost" href="">9 900 руб.</a>
+              </div>
+            </div>
+          </div>
+          <div class="template__container">
+            <div class="template__header">
+              <ul class="template__circle circle">
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+              </ul>
+            </div>
+            <div class="template__wrapper">
+              <img class="template_example" src="/img/img-barbershop.jpg" width="360" height="576"
+                alt="сайт барбершоп Бородиснкий" />
+              <div class="template__hover hover">
+                <h2 class="hover__title">Barbershop</h2>
+                <p class="hover__detail">Сайт салона красоты.<br>Для мужчин, да.</p>
+                <a class="hover__cost" href="">9 900 руб.</a>
+              </div>
+            </div>
+          </div>
+          <div class="template__container">
+            <div class="template__header">
+              <ul class="template__circle circle">
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+              </ul>
+            </div>
+            <div class="template__wrapper">
+              <img class="template_example" src="/img/img-mishka.jpg" width="360" height="576" alt="сайт Мишка" />
+              <div class="template__hover hover">
+                <h2 class="hover__title">MISHKA</h2>
+                <p class="hover__detail">Интернет-магазин<br> вязаных игрушек</p>
+                <a class="hover__cost" href="">9 900 руб.</a>
+              </div>
+            </div>
+          </div>
+          <div class="template__container">
+            <div class="template__header">
+              <ul class="template__circle circle">
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+              </ul>
+            </div>
+            <div class="template__wrapper">
+              <img class="template_example" src="/img/img-aplus.jpg" width="360" height="576" alt="сайт A Plus" />
+              <div class="template__hover hover">
+                <h2 class="hover__title">A Plus</h2>
+                <p class="hover__detail">Лендинг курсов повышения<br> квалификации</p>
+                <a class="hover__cost" href="">9 900 руб.</a>
+              </div>
+            </div>
+          </div>
+          <div class="template__container">
+            <div class="template__header">
+              <ul class="template__circle circle">
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+                <li class="circle__item circle__item--round">
+                </li>
+              </ul>
+            </div>
+            <div class="template__wrapper">
+              <img class="template_example" src="/img/img-kvast.jpg" width="360" height="576" alt="сайт Кваст" />
+              <div class="template__hover hover">
+                <h2 class="hover__title">КВАСТ</h2>
+                <p class="hover__detail">
+                  Промо-сайт производителя<br> крафтового кваса
+                </p>
+                <a class="hover__cost" href="">9 900 руб.</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__button button">
+          <ul class="button__list pages">
+            <li class="pages__item"><a class="pages__link pages__link--active" href="">1</a></li>
+            <li class="pages__item"><a class="pages__link" href="">2</a></li>
+            <li class="pages__item"><a class="pages__link" href="">3</a></li>
+            <li class="pages__item"><a class="pages__link pages__link--next" href="">следующая</a></li>
+          </ul>
+        </section>
       </div>
-      <div class="filter__grid grid">
-        <h2 class="grid__title">Сетка:</h2>
-        <ul class="grid__list grid-list">
-          <li class="grid-list__item">
-            <input type="radio" id="adaptive" name="grid" value="adaptive" checked>
-            <label for="adaptive">Адаптивная</label>
-          </li>
-          <li class="grid-list__item">
-            <input type="radio" id="fix" name="grid" value="fix">
-            <label for="fix">Фиксированная</label>
-          </li>
-          <li class="grid-list__item">
-            <input type="radio" id="flex" name="grid" value="flex">
-            <label for="flex">Резиновая</label>
-          </li>
-        </ul>
-      </div>
-      <div class="filter__features features">
-        <h2 class="features__title">ОСОБЕННОСТИ:</h2>
-        <ul class="features__list features-list">
-          <li class="features-list">
-            <input type="checkbox" id="slaider" name="slaider" value="slaider" checked>
-            <label for="slaider">Слайдер</label>
-          </li>
-          <li class="features-list">
-            <input type="checkbox" id="advantages" name="advantages" value="advantages">
-            <label for="advantages">Блок преимуществ</label>
-          </li>
-          <li class="features-list">
-            <input type="checkbox" id="news" name="news" value="news" checked>
-            <label for="news">Новости</label>
-          </li>
-          <li class="features-list">
-            <input type="checkbox" id="gallery" name="gallery" value="gallery">
-            <label for="gallery">Галерея</label>
-          </li>
-          <li class="features-list">
-            <input type="checkbox" id="button" name="button" value="button">
-            <label for="button">Корзина</label>
-          </li>
-        </ul>
-      </div>
-      <button class="filter__show" type="submit">ПОКАЗАТЬ</button>
-    </form>
-<section class="main__template template">
-<div class="template__sort sort">
-<p class="sort__detail">СОРТИРОВАТЬ:</p>
-<ul class="sort__list sort-list">
-    <li class="sort-list__item"><a class="sort-list__link sort-list__link--active" href="">По цене</a></li>
-    <li class="sort-list__item"><a class="sort-list__link" href="">По типу</a></li>
-    <li class="sort-list__item"><a class="sort-list__link" href="">По названию</a></li>
-    <li class="sort-list__item"><a class="sort-list__link sort-list__link--decrease" href=""></a></li>
-    <li class="sort-list__item"><a class="sort-list__link sort-list__link--increase" href=""></a></li>
-</ul>
-</div>
-
-</section>
+    </div>
   </main>
+  <footer class="body__footer footer">
+    <img class="footer__map" src="/img/map.png" width="1440" height="416"
+      alt=" Мы ныходимся по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" />
+    <div class="footer__write">
+      <h2 class="footer__about">NЁRDS DESIGN STUDIO</h2>
+      <p class="footer__adress">
+        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </p>
+      <a class="footer__telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+      <a class="footer__link" href="">Напишите нам</a>
+    </div>
+    <div class="footer__social">
+      <ul class="footer__list social">
+        <li class="social__item"><a class="social__link social__link--vk" href=""></a></li>
+        <li class="social__item"><a class="social__link social__link--face" href=""></a></li>
+        <li class="social__item"><a class="social__link social__link--insta" href=""></a></li>
+      </ul>
+      <div class="footer__wrap">
+        <p class="footer__benefit">Давайте дружить, это выгодно!</p>
+        <p class="footer__discount">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </div>
+  </footer>
   <script src="" async defer></script>
 </body>
 

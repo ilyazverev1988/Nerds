@@ -1,4 +1,22 @@
-.body {
-  min-width: 320px;
+body {
+  //min-width: $width;
   margin: 0 auto;
+}
+
+.body__header {
+  margin-top: 49px;
+}
+
+.body__main {
+  margin-top: 36px;
+}
+
+.body__background {
+  background-color: #d7dcde;
+}
+
+.body__footer {
+  width: $width;
+  margin: 80px auto 0 auto;
+  position: relative;
 }

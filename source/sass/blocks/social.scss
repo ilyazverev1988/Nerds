@@ -15,6 +15,17 @@
   position: relative;
   display: block;
 
+  &:hover {
+    background-color: #e74246;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: inset 60px 50px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--vk::before {
     position: absolute;
     content: "";
@@ -44,4 +55,8 @@
     top: 30px;
     left: 30px;
   }
+}
+
+.social__link:active.social__link::before {
+  opacity: 0.3;
 }

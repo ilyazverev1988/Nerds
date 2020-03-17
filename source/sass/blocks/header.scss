@@ -29,6 +29,17 @@
   margin-top: 49px;
 }
 
-.header__link--disable {
-  pointer-events: none;
+.header__link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--disable {
+    pointer-events: none;
+  }
 }

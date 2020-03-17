@@ -11,6 +11,10 @@
   position: relative;
   cursor: pointer;
 
+  &:hover::before {
+    opacity: 1;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -19,6 +23,7 @@
     height: 23px;
     top: -2px;
     left: -36px;
+    opacity: 0.4;
   }
 }
 
@@ -30,6 +35,11 @@
   height: 23px;
   top: -2px;
   left: -36px;
+  opacity: 0.4;
+}
+
+.features-list__input:checked:hover + .features-list__label::after {
+  opacity: 1;
 }
 
 .features-list__input:checked + .features-list__label::before {

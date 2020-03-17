@@ -40,13 +40,62 @@
 
   &--red {
     background-color: #fb565a;
+
+    &:hover {
+      background-color: #e74246;
+    }
+
+    &:focus,
+    &:active {
+      background-color: #d7373b;
+      color: rgba(255, 255, 255, 0.3);
+      box-shadow: inset 30px 50px 0 rgba(0, 1, 1, 0.1);
+    }
   }
 
   &--green {
     background-color: #00ca74;
+
+    &:hover {
+      background-color: #00bc6c;
+    }
+
+    &:focus,
+    &:active {
+      background-color: #00aa62;
+      color: rgba(255, 255, 255, 0.3);
+      box-shadow: inset 30px 50px 0 rgba(0, 1, 1, 0.1);
+    }
   }
 
   &--yellow {
     background-color: #efc84a;
+
+    &:hover {
+      background-color: #eab534;
+    }
+
+    &:focus,
+    &:active {
+      background-color: #e5a722;
+      color: rgba(255, 255, 255, 0.3);
+      box-shadow: inset 30px 50px 0 rgba(0, 1, 1, 0.1);
+    }
+  }
+}
+
+.example-logo__link {
+  display: block;
+}
+
+.example-logo__img {
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }

@@ -15,10 +15,24 @@
     content: "";
     width: 15px;
     height: 15px;
-    background-image: url("../img/cart-icon.svg");
+    background-image: url("../img/cart-icon.png");
     background-repeat: no-repeat;
     top: 2px;
     left: -28px;
+  }
+
+  &:hover {
+    color: #fb565a;
+  }
+
+  &:focus,
+  &:active {
+    color: #a7a7a7;
+  }
+
+  &--active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fb565a;
   }
 }
 

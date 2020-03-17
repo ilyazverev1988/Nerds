@@ -11,6 +11,10 @@
   position: relative;
   cursor: pointer;
 
+  &:hover::before {
+    opacity: 1;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -19,6 +23,7 @@
     height: 25px;
     top: -3px;
     left: -39px;
+    opacity: 0.4;
   }
 }
 
@@ -31,6 +36,11 @@
   top: -3px;
   left: -39px;
   z-index: 1;
+  opacity: 0.4;
+}
+
+.grid-list__input:checked:hover + .grid-list__label::after {
+  opacity: 1;
 }
 
 .grid-list__input:checked + .grid-list__label::before {

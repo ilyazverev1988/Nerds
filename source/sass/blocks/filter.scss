@@ -67,11 +67,23 @@
 .filter__show {
   width: 260px;
   height: 50px;
-  background-color: #d7dcde;
+  background-color: #eeeeee;
   border: none;
   margin-top: 34px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #dfdfdf;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+    outline: none;
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

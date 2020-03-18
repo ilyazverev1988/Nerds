@@ -20,3 +20,24 @@ body {
   margin: 80px auto 0 auto;
   position: relative;
 }
+
+.body__write {
+  width: 960px;
+  height: 590px;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  margin: 30vh auto 0 auto;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.body__iframe {
+  z-index: 1;
+  position: absolute;
+  bottom: -1035px;
+
+  &--catalog {
+    bottom: -1768px;
+  }
+}

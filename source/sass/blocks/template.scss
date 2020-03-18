@@ -28,6 +28,14 @@
   background-color: #d7dcde;
   position: absolute;
   top: 344px;
-  left: 1px;
+  left: 0;
   display: none;
+}
+
+.template__container:hover .template__header {
+  background-color: #4d4d4d;
+}
+
+.template__container:hover .template__hover {
+  display: block;
 }

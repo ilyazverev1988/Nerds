@@ -6,6 +6,16 @@
   margin: 0;
   padding-top: 35px;
   text-align: center;
+  display: block;
+
+  &:hover {
+    color: #fb565a;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .hover__detail {
@@ -32,4 +42,14 @@
   padding-top: 18px;
   box-sizing: border-box;
   margin: 49px auto 0 auto;
+
+  &:hover {
+    background-color: #e74246;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+  }
 }

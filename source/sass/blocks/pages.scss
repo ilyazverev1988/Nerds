@@ -13,12 +13,23 @@
   text-align: center;
   box-sizing: border-box;
   padding-top: 16px;
-  background-color: #d7dcde;
+  background-color: #eeeeee;
   display: block;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #dfdfdf;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   &--active {
     border: 3px solid #dbdbdb;
@@ -30,7 +41,7 @@
   &--next {
     padding-top: 16px;
     margin-right: 11px;
-    background-color: #d7dcde;
+    background-color: #eeeeee;
     width: 260px;
     height: 50px;
   }

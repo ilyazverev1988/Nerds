@@ -147,7 +147,7 @@
             <div class="template__wrapper">
               <img class="template_example" src="/img/img-sedona.jpg" width="360" height="576" alt="сайт Седона" />
               <div class="template__hover hover">
-                <h2 class="hover__title">Sedona</h2>
+                <a href="" class="hover__title">Sedona</a>
                 <p class="hover__detail">Информационный сайт<br> для туристов</p>
                 <a class="hover__cost" href="">9 900 руб.</a>
               </div>
@@ -167,7 +167,7 @@
             <div class="template__wrapper">
               <img class="template_example" src="/img/img-pink.jpg" width="360" height="576" alt="сайт Pink" />
               <div class="template__hover hover">
-                <h2 class="hover__title">Pink App</h2>
+                <a href="" class="hover__title">Pink App</a>
                 <p class="hover__detail">
                   Продуктовый лендинг<br> приложения для iOS и Android
                 </p>
@@ -190,7 +190,7 @@
               <img class="template_example" src="/img/img-barbershop.jpg" width="360" height="576"
                 alt="сайт барбершоп Бородиснкий" />
               <div class="template__hover hover">
-                <h2 class="hover__title">Barbershop</h2>
+                <a href="" class="hover__title">Barbershop</a>
                 <p class="hover__detail">Сайт салона красоты.<br>Для мужчин, да.</p>
                 <a class="hover__cost" href="">9 900 руб.</a>
               </div>
@@ -210,7 +210,7 @@
             <div class="template__wrapper">
               <img class="template_example" src="/img/img-mishka.jpg" width="360" height="576" alt="сайт Мишка" />
               <div class="template__hover hover">
-                <h2 class="hover__title">MISHKA</h2>
+                <a href="" class="hover__title">MISHKA</a>
                 <p class="hover__detail">Интернет-магазин<br> вязаных игрушек</p>
                 <a class="hover__cost" href="">9 900 руб.</a>
               </div>
@@ -230,7 +230,7 @@
             <div class="template__wrapper">
               <img class="template_example" src="/img/img-aplus.jpg" width="360" height="576" alt="сайт A Plus" />
               <div class="template__hover hover">
-                <h2 class="hover__title">A Plus</h2>
+                <a href="" class="hover__title">A Plus</a>
                 <p class="hover__detail">Лендинг курсов повышения<br> квалификации</p>
                 <a class="hover__cost" href="">9 900 руб.</a>
               </div>
@@ -250,7 +250,7 @@
             <div class="template__wrapper">
               <img class="template_example" src="/img/img-kvast.jpg" width="360" height="576" alt="сайт Кваст" />
               <div class="template__hover hover">
-                <h2 class="hover__title">КВАСТ</h2>
+                <a href="" class="hover__title">КВАСТ</a>
                 <p class="hover__detail">
                   Промо-сайт производителя<br> крафтового кваса
                 </p>
@@ -270,6 +270,10 @@
       </div>
     </div>
   </main>
+  <iframe class="body__iframe body__iframe--catalog"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584552633810!5m2!1sru!2sru"
+    width="100%" height="416" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+    tabindex="0"></iframe>
   <footer class="body__footer footer">
     <img class="footer__map" src="/img/map.png" width="1440" height="416"
       alt=" Мы ныходимся по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" />
@@ -279,7 +283,7 @@
         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
       <a class="footer__telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      <a class="footer__link" href="">Напишите нам</a>
+      <a class="footer__link" href="form.html">Напишите нам</a>
     </div>
     <div class="footer__social">
       <ul class="footer__list social">
@@ -295,6 +299,30 @@
       </div>
     </div>
   </footer>
+  <div class="body__write body__write--hide">
+    <form class="write__form" action="">
+      <div class="write__wrap">
+        <h1 class="write__title">Напишите нам</h1>
+        <button class="write__cancel"><img class="write__img" src="/img/close-cross.png" alt="закрытие формы" width="21"
+            height="21"></button>
+      </div>
+      <div class="write__wrapper">
+        <div class="write__container">
+          <label class="write__label" for="name">Ваше имя:</label>
+          <input class="write__input" type="text" id="name" value="Имя Фамилия" required>
+        </div>
+        <div class="write__container">
+          <label class="write__label" for="email">Ваш e-mail:</label>
+          <input class="write__input" type="text" id="email" value="email@example.com" required>
+        </div>
+      </div>
+      <div class="write__container-area">
+        <label class="write__label" for="area">Текст письма:</label>
+        <textarea class="write__area" name="area" id="area">В свободной форме</textarea>
+      </div>
+      <button class="write__button" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </div>
   <script src="" async defer></script>
 </body>
 

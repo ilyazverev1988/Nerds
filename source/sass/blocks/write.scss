@@ -19,8 +19,9 @@
 
 .write__cancel {
   border: none;
-  cursor: pointer;
   opacity: 0.3;
+  background-color: white;
+  cursor: pointer;
 
   &:hover {
     opacity: 1;
@@ -61,6 +62,10 @@
   padding-left: 16px;
   margin-top: 12px;
   border: 2px solid #d7dcde;
+
+  &--error {
+    border: 2px solid red;
+  }
 
   &:hover {
     border: 2px solid #b4b9bb;

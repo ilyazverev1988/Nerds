@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="css/normalize.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body class="body">
@@ -41,9 +42,9 @@
       </h1>
       <section class="main-slider slider">
         <ul class="slider__button slider-button">
-          <button class="slider-button__item slider-button__item--checked"></button>
-          <button class="slider-button__item"></button>
-          <button class="slider-button__item"></button>
+          <a href="" class="slider-button__item slider-button__item--checked" id="1"></a>
+          <a class="slider-button__item" id="2"></a>
+          <a class="slider-button__item" id="3"></a>
         </ul>
         <div class="slider__card design slider_card--checked">
           <div class="design__container">
@@ -209,11 +210,11 @@
       <div class="write__wrapper">
         <div class="write__container">
           <label class="write__label" for="name">Ваше имя:</label>
-          <input class="write__input" type="text" id="name" value="Имя Фамилия" required>
+          <input class="write__input" type="text" id="name" placeholder="Имя Фамилия">
         </div>
         <div class="write__container">
           <label class="write__label" for="email">Ваш e-mail:</label>
-          <input class="write__input" type="text" id="email" value="email@example.com" required>
+          <input class="write__input" type="text" id="email" placeholder="email@example.com">
         </div>
       </div>
       <div class="write__container-area">
@@ -223,7 +224,7 @@
       <button class="write__button" type="submit">ОТПРАВИТЬ</button>
     </form>
   </div>
-  <script src="" async defer></script>
+  <script src="/js/form.js"></script>
 </body>
 
 </html>

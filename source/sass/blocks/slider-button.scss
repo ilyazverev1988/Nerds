@@ -7,6 +7,8 @@
   border: none;
   position: relative;
   cursor: pointer;
+  display: block;
+  margin-right: 10px;
 
   &--checked::before {
     position: absolute;
@@ -19,4 +21,8 @@
     top: 5px;
     left: 5px;
   }
+}
+
+.slider-button {
+  display: flex;
 }
